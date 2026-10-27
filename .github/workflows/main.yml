@@ -1,6 +1,9 @@
 name: Restart Supabase project
 
 on:
+  schedule:
+    # Every 6h (UTC).
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
